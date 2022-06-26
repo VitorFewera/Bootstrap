@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fruta e Fruto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Navbar - Barra de tarefas-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <p class="tituloNav"> Frutas & Frutos</p>
+        </a>
+        <!--Botao Hamburguer-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav active">
+            <li><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+            <li> <a class="nav-link" href="#cards">Receitas</a></li>
+            <li> <a class="nav-link" href="#">Quem Somos</a></li>
+            <li> <a class="nav-link" data-toggle="modal" data-target="#modall" href="#">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <title class="tituloNav">fruto & fruta</title>
+  </header>
+
+  <!--Carrosel de imagens-->
+  <main>
+
+    <section id="carouselExampleCaptions" class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./src/img/carrossel-img1.jpg" class="d-block w-100 imagem-carrosel" alt="...">
+          <div class="carousel-caption d-none top-50 d-md-block">
+            <h1 class="titulo display-4">Reaproveite melhor os alimentos!</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./src/img/carrossel-img2.jpg" class="d-block w-100 imagem-carrosel" alt="...">
+          <div class="carousel-caption d-none top-50 d-md-block">
+            <h1 class="titulo display-4">Economize e ganhe em saúde!</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./src/img/carrossel-img3.jpg" class="d-block w-100 imagem-carrosel" alt="...">
+          <div class="carousel-caption d-none top-50 d-md-block">
+            <h1 class="titulo display-4">Saude é o que interessa, o resto não tem pressa</h1>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+
+    <!--Titulo-->
+    <section class="titulos">
+      <h1 class="text-center titulo cor-titulo pt-3">Receitas para economizar e ganhar saúde</h1>
+      <p class="text-center text-secondary p-3">Nossas receitas ajudam você a aproveitar melhor os alimentos,
+        economizar,
+        ganhar tempo e praticidade</p>
+    </section>
+
+    <!--Cards-->
+    <section class="cards container-fluid bg-light ">
+
+      <div class="row justify-content-center" id="cards">
+
+        <article class="card rounded cor-borda-card card-position p-0 m-4 col-md-4">
+          <img src="src/img/receita-abacate.jpg" class="card-img-top card-posisao-imagem" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tigela de Abacate</h5>
+            <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+            <a href="https://www.tudoreceitas.com/receita-de-smoothie-bowl-de-abacate-6878.html" target="_blanck" class="btn btn-danger cor-botao-card">Veja a Receita</a>
+          </div>
+        </article>
+
+
+        <article class="card rounded cor-borda-card card-position p-0 m-4 col-md-4">
+          <img src="src/img/receita-kiwi.jpg" class="card-img-top card-posisao-imagem" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Salada de Kiwi</h5>
+            <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+            <a href="https://www.tudoreceitas.com/receita-de-salada-verde-com-kiwi-2788.html" target="_blanck" class="btn btn-danger cor-botao-card">Veja a Receita</a>
+          </div>
+        </article>
+
+
+
+        <article class="card rounded cor-borda-card card-position p-0 m-4 col-md-4">
+          <img src="src/img/receita-mix.jpg" class="card-img-top card-posisao-imagem" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mix de vegetais</h5>
+            <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+            <a href="https://www.tudoreceitas.com/receita-de-mix-de-legumes-refogados-na-manteiga-7105.html" target="_blanck" class="btn btn-danger cor-botao-card">Veja a Receita</a>
+          </div>
+        </article>
+
+
+        <article class="card rounded cor-borda-card card-position p-0 m-4 col-md-4">
+          <img src="src/img/receita-pimentoes.jpg" class="card-img-top card-posisao-imagem" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pimentões à Juliana</h5>
+            <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+            <a href="https://www.tudogostoso.com.br/receita/13216-pimentao-recheado-da-vovo.html" target="_blanck" class="btn btn-danger cor-botao-card">Veja a Receita</a>
+          </div>
+        </article>
+
+        <article class="card rounded cor-borda-card card-position p-0 m-4 col-md-4">
+          <img src="src/img/receita-oriental.jpg" class="card-img-top card-posisao-imagem" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Prato oriental</h5>
+            <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+            <a href="https://meubistro.com/blog/a-cozinha-oriental/" target="_blanck" class="btn btn-danger cor-botao-card">Veja a Receita </a>
+          </div>
+        </article>
+
+
+        <article class="card rounded cor-borda-card card-position p-0 m-4 col-md-4">
+          <img src="src/img/receita-beterrabas.jpg" class="card-img-top card-posisao-imagem" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Beterrabas assadas</h5>
+            <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+            <a href="https://www.saboresajinomoto.com.br/receita/beterraba-assada" target="_blanck" class="btn btn-danger cor-botao-card">Veja a Receita</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nome Completo</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Endereço de email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Comentario:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Seja positivo ou negativo"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary " data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-danger cor-botao-card">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--Roda pé-->
+  <footer class="bg-secondary p-3  ">
+    <p class="h4 m-0 text-light text-center font-weight-bold" >Contato: <a  class="text-light" href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
